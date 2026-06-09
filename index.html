@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cascade-Pressure Atlas — 2026-Q2 Financial-Discourse Narrative Map</title>
+<meta name="description" content="Narrative-class typology of currently-crystallized macro-narratives plus their cascade-pressure pair-collisions. Not financial advice. Track-record forward-only.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root {
+    --bg: #0e0f12;
+    --fg: #d8d8d8;
+    --muted: #888;
+    --accent: #d4a017;
+    --pair-bg: #1a1c20;
+    --border: #2a2c30;
+    --warn: #c8553d;
+    --safe: #4f6d4f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: -apple-system, "Segoe UI", system-ui, sans-serif; line-height: 1.55; }
+  .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 96px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 26px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; font-weight: 600; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 15px; font-weight: 600; margin: 20px 0 8px; }
+  .tagline { color: var(--muted); font-size: 14px; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 12px; }
+  .meta strong { color: var(--fg); }
+  .disclaimer { background: #2a1a14; border-left: 3px solid var(--warn); padding: 12px 14px; margin: 20px 0 0; font-size: 13px; color: #e0bdb0; }
+  .scope { background: #14201a; border-left: 3px solid var(--safe); padding: 10px 14px; margin: 12px 0 0; font-size: 13px; color: #b9c9b9; }
+  .engram { background: var(--pair-bg); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; margin-bottom: 12px; }
+  .engram-header { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+  .engram-id { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--accent); font-size: 13px; font-weight: 600; }
+  .engram-name { font-weight: 600; font-size: 15px; }
+  .engram-meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .tags { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-family: ui-monospace, monospace; font-size: 11px; padding: 2px 7px; border-radius: 3px; background: #2a2c30; color: #cabb87; border: 1px solid #3a3c40; }
+  .tag.primary { background: #3a2e0e; color: var(--accent); border-color: #4a3e1e; }
+  .signature { font-size: 13px; color: #aaa; margin-top: 8px; font-style: italic; }
+  .pair { background: var(--pair-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin-bottom: 14px; }
+  .pair-header { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .pair-id { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; }
+  .pair-engrams { font-weight: 600; }
+  .pressure-bar { background: #2a2c30; height: 10px; border-radius: 4px; margin: 10px 0 4px; overflow: hidden; }
+  .pressure-fill { height: 100%; background: linear-gradient(90deg, #4f6d4f 0%, #d4a017 60%, #c8553d 100%); }
+  .pair-detail { font-size: 13px; color: #bbb; margin-top: 10px; }
+  .pair-detail dt { color: var(--muted); display: inline; font-weight: 600; margin-right: 6px; }
+  .pair-detail dd { display: inline; margin: 0 0 0 0; }
+  .pair-detail .row { padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  code { font-family: ui-monospace, monospace; font-size: 12px; background: #1a1c20; padding: 1px 5px; border-radius: 3px; }
+  ul.limits { padding-left: 20px; font-size: 13px; color: #bbb; }
+  ul.limits li { margin-bottom: 6px; }
+  footer { border-top: 1px solid var(--border); margin-top: 60px; padding-top: 16px; font-size: 12px; color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .json-link { font-size: 12px; padding: 4px 10px; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); }
+  details { margin: 12px 0; }
+  summary { cursor: pointer; font-size: 13px; color: var(--accent); padding: 6px 0; }
+  .typology-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 16px; font-size: 12px; }
+  .typology-grid div { padding: 4px 0; }
+  .typology-grid .tcode { color: var(--accent); font-family: ui-monospace, monospace; }
+  .empty-state { color: var(--muted); font-size: 13px; padding: 16px; background: var(--pair-bg); border-radius: 6px; }
+  .what-this-is { background: #1a1a22; border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; margin: 24px 0 8px; font-size: 13px; }
+  .what-this-is h3 { margin-top: 0; font-size: 14px; color: var(--accent); }
+  .what-this-is .col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .what-this-is .col > div { line-height: 1.5; }
+  .what-this-is .col strong { color: var(--fg); display: block; margin-bottom: 4px; }
+  .what-this-is .yes { color: #b9c9b9; }
+  .what-this-is .no { color: #e0bdb0; }
+  @media (max-width: 600px) { .what-this-is .col { grid-template-columns: 1fr; gap: 12px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1 id="title">Cascade-Pressure Atlas</h1>
+  <div class="tagline" id="tagline">Loading…</div>
+  <div class="meta">
+    <span><strong>Author:</strong> <span id="author"></span></span> ·
+    <span><strong>Version:</strong> <span id="version"></span></span> ·
+    <span><strong>Published:</strong> <span id="pubdate"></span></span> ·
+    <span><strong>Next refresh:</strong> <span id="nextdate"></span></span> ·
+    <a class="json-link" href="dashboard.json">Raw JSON ↗</a> ·
+    <a class="json-link" href="methodology.md">Methodology ↗</a>
+  </div>
+  <div class="disclaimer" id="disclaimer"></div>
+  <div class="scope" id="scope"></div>
+</header>
+
+<div class="what-this-is">
+  <h3>What this is — and what this is not</h3>
+  <div class="col">
+    <div class="yes">
+      <strong>This IS</strong>
+      A narrative-class typology of currently-crystallized macro-narrative-engrams in financial discourse, with cascade-pressure scores between incompatible engram pairs. Predictions describe the FORM a cascade would take if a triggering signal landed. Forward predictions are pre-registered, locked, and scored at window-close.
+    </div>
+    <div class="no">
+      <strong>This is NOT</strong>
+      Financial advice. Asset positioning. Price prediction. A trading signal. A recommendation to buy, sell, hold, or position any asset. Readers who derive trading decisions from this document do so entirely at their own risk; the author and publisher accept no responsibility for such decisions.
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>1 · Crystallized Narrative-Engrams</h2>
+  <p style="font-size: 13px; color: var(--muted); margin-top: 0;">
+    Currently-active narrative-engrams in 2026-Q2 financial-discourse. Each is assigned one primary narrative-class label (T1..T17) and zero or more secondaries. Bridge-density counts the number of distinct discourse substrates the engram spans (1 = niche; 5 = saturating).
+  </p>
+  <div id="engrams"></div>
+</section>
+
+<section>
+  <h2>2 · Cascade-Pressure Map</h2>
+  <p style="font-size: 13px; color: var(--muted); margin-top: 0;">
+    Engram-pair tensions ranked by cascade-pressure score. The score combines sin²(Δθ) (narrative-incompatibility) with substrate-overlap and engram-rigidity. HIGH cascade-pressure pairs do NOT mean a cascade WILL trigger; they mean that IF a triggering signal lands, the cascade response will be larger.
+  </p>
+  <div id="pairs"></div>
+</section>
+
+<section>
+  <h2>3 · Narrative-Class Distribution</h2>
+  <div id="distribution"></div>
+</section>
+
+<section>
+  <h2>4 · Track Record</h2>
+  <div id="track-record"></div>
+</section>
+
+<section>
+  <h2>5 · Methodology Summary</h2>
+  <p id="methodology-short" style="font-size: 13px; color: #bbb;"></p>
+  <details>
+    <summary>Show full narrative-class typology (T1..T17)</summary>
+    <div class="typology-grid" id="typology"></div>
+  </details>
+  <p style="font-size: 13px; color: var(--muted); margin-top: 12px;">
+    Full rubric (T-class assignment protocol, Δθ scoring, cascade-form prediction) is in <a href="methodology.md">methodology.md</a>.
+  </p>
+</section>
+
+<section>
+  <h2>6 · Disclosed Limitations</h2>
+  <ul class="limits" id="limits"></ul>
+</section>
+
+<section id="links-section">
+  <h2>7 · Newsletter and Support</h2>
+  <p style="font-size: 13px; color: var(--muted); margin-top: 0;">
+    The Atlas refreshes monthly. The companion newsletter publishes the same forward-prediction locks plus written commentary at each refresh. Free.
+  </p>
+  <p><strong>Newsletter:</strong> <a id="letter-url" href="#"></a> (free, monthly)</p>
+  <div id="tip-jar-block" style="margin-top: 16px; padding: 14px; border: 1px solid #2a2a2a; border-radius: 6px; background: #181818;">
+    <p style="font-size: 13px; margin: 0 0 8px 0; color: #ccc;"><strong>Tip jar (optional, voluntary)</strong></p>
+    <p style="font-size: 12px; margin: 0 0 8px 0; color: var(--muted);" id="tip-jar-note"></p>
+    <p style="font-size: 12px; margin: 0 0 4px 0; color: #888;">BTC (on-chain):</p>
+    <code style="display: block; font-size: 12px; background: #0d0d0d; padding: 8px; border-radius: 4px; word-break: break-all; color: #d4af37;" id="tip-jar-btc"></code>
+    <p id="tip-jar-ln-block" style="font-size: 12px; margin: 8px 0 0 0; color: #888; display: none;">Lightning: <code style="background: #0d0d0d; padding: 4px 6px; border-radius: 3px; color: #d4af37;" id="tip-jar-ln"></code></p>
+  </div>
+</section>
+
+<footer>
+  <p>
+    This is a research artifact. NOT financial advice. NOT a recommendation to buy, sell, or position any asset. Predictions are NARRATIVE-FORM (which pair-tensions exist + what cascade-form would look like IF triggered) — not directional financial advice.
+    Pseudonymous publication. License: CC BY-NC 4.0.
+  </p>
+</footer>
+
+</div>
+
+<script>
+async function load() {
+  let data;
+  try {
+    const res = await fetch('dashboard.json');
+    data = await res.json();
+  } catch(e) {
+    document.body.innerHTML = '<div style="padding:40px;color:#c8553d">Failed to load dashboard.json. Run from a static-file server (e.g. `python3 -m http.server`).</div>';
+    return;
+  }
+
+  document.getElementById('title').textContent = data.title;
+  document.getElementById('tagline').textContent = data.tagline;
+  document.getElementById('author').textContent = data.author;
+  document.getElementById('version').textContent = data.version;
+  document.getElementById('pubdate').textContent = data.publication_date;
+  document.getElementById('nextdate').textContent = data.next_refresh_date;
+  document.getElementById('disclaimer').textContent = data.disclaimer;
+  document.getElementById('scope').textContent = 'Scope boundary: ' + data.scope_boundary;
+  document.getElementById('methodology-short').textContent = data.methodology_summary_short;
+
+  // Engrams
+  const engramsEl = document.getElementById('engrams');
+  for (const ne of data.narrative_engrams) {
+    const tags = [`<span class="tag primary">${ne.narrative_class_primary} ${data.narrative_class_typology.classes[ne.narrative_class_primary]?.name || ''}</span>`]
+      .concat((ne.narrative_class_secondary || []).map(t =>
+        `<span class="tag">${t} ${data.narrative_class_typology.classes[t]?.name || ''}</span>`
+      )).join(' ');
+    engramsEl.insertAdjacentHTML('beforeend', `
+      <div class="engram">
+        <div class="engram-header">
+          <div>
+            <span class="engram-id">${ne.id}</span>
+            <span class="engram-name">${escapeHtml(ne.display_name)}</span>
+          </div>
+          <div class="tags">${tags}</div>
+        </div>
+        <div class="engram-meta">
+          <strong>Bridge density:</strong> ${ne.bridge_density}/5 ·
+          <strong>Status:</strong> ${ne.current_status} ·
+          <strong>Rigidity:</strong> ${ne.rigidity} ·
+          <strong>First observed:</strong> ${ne.first_observed}
+        </div>
+        <div class="signature">Signature: ${escapeHtml(ne.linguistic_signature_examples.join(' / '))}</div>
+        ${ne.notes ? `<div class="signature" style="font-style:normal;color:#999;">${escapeHtml(ne.notes)}</div>` : ''}
+      </div>
+    `);
+  }
+
+  // Pairs
+  const pairsEl = document.getElementById('pairs');
+  const sortedPairs = [...data.cascade_pressure_pairs].sort((a,b) => b.cascade_pressure_score_approx - a.cascade_pressure_score_approx);
+  for (const p of sortedPairs) {
+    const fillPct = Math.round(p.cascade_pressure_score_approx * 100);
+    pairsEl.insertAdjacentHTML('beforeend', `
+      <div class="pair">
+        <div class="pair-header">
+          <div>
+            <span class="pair-id">${p.pair_id}</span>
+            <span class="pair-engrams">${p.engrams.join(' ↔ ')}</span>
+          </div>
+          <div class="pair-id">${p.cascade_pressure_label} (${p.cascade_pressure_score_approx.toFixed(2)})</div>
+        </div>
+        <div class="pressure-bar"><div class="pressure-fill" style="width:${fillPct}%"></div></div>
+        <div class="pair-detail">
+          <div class="row"><dt>Δθ:</dt><dd>${p.delta_theta_degrees}°</dd> · <dt>Substrate overlap:</dt><dd>${p.substrate_overlap}</dd> · <dt>Horizon:</dt><dd>${p.horizon}</dd></div>
+          <div class="row"><dt>Predicted cascade form:</dt><dd>${escapeHtml(p.predicted_cascade_form)}</dd></div>
+          <div class="row"><dt>Trigger to watch:</dt><dd>${escapeHtml(p.trigger_signal_to_watch)}</dd></div>
+          <div class="row"><dt>Resolution hint:</dt><dd>${escapeHtml(p.predicted_resolution_hint)}</dd></div>
+        </div>
+      </div>
+    `);
+  }
+
+  // Distribution
+  const distEl = document.getElementById('distribution');
+  const counts = data.narrative_class_distribution.primary_class_counts;
+  let html = '<table><thead><tr><th>Class</th><th>Cue</th><th>Count</th></tr></thead><tbody>';
+  for (const [cls, n] of Object.entries(counts)) {
+    const cue = data.narrative_class_typology.classes[cls]?.cue || '';
+    const name = data.narrative_class_typology.classes[cls]?.name || '';
+    html += `<tr><td><code>${cls}</code> ${name}</td><td style="color:#999">${escapeHtml(cue)}</td><td>${n}</td></tr>`;
+  }
+  html += '</tbody></table>';
+  html += `<p style="font-size:12px;color:var(--muted);margin-top:10px;">${escapeHtml(data.narrative_class_distribution.diversity_assessment)}</p>`;
+  distEl.innerHTML = html;
+
+  // Track record
+  const trEl = document.getElementById('track-record');
+  if ((data.track_record.predictions_resolved || []).length === 0) {
+    trEl.innerHTML = `<div class="empty-state">
+      No predictions have resolved yet. First prediction lock: <strong>${data.track_record.first_prediction_lock_date}</strong>. First resolution window opens: <strong>${data.track_record.first_resolution_date_approx}</strong>.<br><br>
+      Each refresh will publish: predictions made in prior refreshes + outcomes per pre-registered criteria. Scoring: ${Object.entries(data.track_record.scoring_protocol).map(([k,v]) => `<code>${k}</code>=${v}`).join(', ')}.
+    </div>`;
+  } else {
+    let h = '<table><thead><tr><th>Pair</th><th>Predicted</th><th>Outcome</th><th>Verdict</th><th>Score</th></tr></thead><tbody>';
+    for (const r of data.track_record.predictions_resolved) {
+      h += `<tr><td>${r.pair_id}</td><td>${escapeHtml(r.prediction_text || '')}</td><td>${r.outcome_observed_date || ''}</td><td>${r.verdict}</td><td>${r.score_contribution || ''}</td></tr>`;
+    }
+    h += '</tbody></table>';
+    h += `<p>Running score: <strong>${data.track_record.running_score ?? 'n/a'}</strong></p>`;
+    trEl.innerHTML = h;
+  }
+
+  // Typology
+  const typEl = document.getElementById('typology');
+  for (const [cls, info] of Object.entries(data.narrative_class_typology.classes)) {
+    typEl.insertAdjacentHTML('beforeend', `<div><span class="tcode">${cls}</span> <strong>${info.name}</strong> — <span style="color:#999">${escapeHtml(info.cue)}</span></div>`);
+  }
+
+  // Limits
+  const lim = document.getElementById('limits');
+  for (const l of data.limitations_disclosed) lim.insertAdjacentHTML('beforeend', `<li>${escapeHtml(l)}</li>`);
+
+  // Links + tip jar
+  if (data.links) {
+    const letterA = document.getElementById('letter-url');
+    if (letterA && data.links.letter_url) {
+      letterA.href = data.links.letter_url;
+      letterA.textContent = data.links.letter_url;
+    }
+    const note = document.getElementById('tip-jar-note');
+    if (note && data.links.tip_jar_note) note.textContent = data.links.tip_jar_note;
+    const btc = document.getElementById('tip-jar-btc');
+    if (btc && data.links.tip_jar_btc) btc.textContent = data.links.tip_jar_btc;
+    if (data.links.tip_jar_lightning) {
+      const lnBlock = document.getElementById('tip-jar-ln-block');
+      const ln = document.getElementById('tip-jar-ln');
+      if (lnBlock) lnBlock.style.display = 'block';
+      if (ln) ln.textContent = data.links.tip_jar_lightning;
+    }
+  }
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+load();
+</script>
+</body>
+</html>

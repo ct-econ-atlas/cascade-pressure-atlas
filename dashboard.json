@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "title": "Cascade-Pressure Atlas \u2014 2026-Q2 Issue #002 (verdicts + new locks)",
+  "tagline": "Narrative-class typology of currently-crystallized macro-narratives plus their cascade-pressure pair-collisions. Not financial advice. Not predictions of price. Track-record forward-only.",
+  "author": "CT-Econ Atlas (pseudonymous)",
+  "publication_date": "2026-06-09",
+  "next_refresh_date": "2026-07-09",
+  "refresh_cadence": "weekly (engram-state delta refresh) + monthly (cascade-pair score refresh) + cycle-bound (track-record entry on prediction-window close)",
+  "version": "BETA-0.7",
+  "license": "CC-BY-NC-4.0",
+  "disclaimer": "This document tracks narrative patterns in financial discourse, not market positioning. NO recommendations to buy, sell, hold, or position any asset. Readers who derive trading decisions from this document do so entirely at their own risk. No accountability for trading decisions made by readers.",
+  "scope_boundary": "Predictive scope is INTERNALLY-DRIVEN narrative cascades. Externally-triggered cascades (pandemics, wars, natural disasters) are out-of-scope. See methodology.",
+  "narrative_class_typology": {
+    "source": "Hyde 1998 + Doty 2000 (cross-cultural narrative-typology), operationalized for financial discourse",
+    "classes": {
+      "T1": {
+        "name": "disturbance",
+        "cue": "Anti-establishment, refusal-to-comply, against-the-grain framing"
+      },
+      "T2": {
+        "name": "mediation",
+        "cue": "Bridge prior-incompatible scaffolds, integration"
+      },
+      "T3": {
+        "name": "destruction",
+        "cue": "Liquidation, elimination, the-old-must-die"
+      },
+      "T4": {
+        "name": "preservation",
+        "cue": "Defensive stance, capital protection, OG-quality flight"
+      },
+      "T5": {
+        "name": "reconciliation",
+        "cue": "Repair-after-conflict, post-cascade institution-building"
+      },
+      "T6": {
+        "name": "challenge",
+        "cue": "Paradigm-confrontation, schism, fork"
+      },
+      "T7": {
+        "name": "trial",
+        "cue": "Flagship-test, bellwether-experiment"
+      },
+      "T8": {
+        "name": "guidance",
+        "cue": "This-time-is-different, civilizational-shift framing"
+      },
+      "T9": {
+        "name": "temptation",
+        "cue": "Mass-democratization, leverage-as-edge"
+      },
+      "T10": {
+        "name": "reversal",
+        "cue": "Short-cycle-oscillation, momentum-extreme reversion"
+      },
+      "T11": {
+        "name": "protection",
+        "cue": "Trusted-bandwidth, regulator/insurance/safety-net"
+      },
+      "T12": {
+        "name": "judgement",
+        "cue": "Authoritative-pronouncement, expert-stamps-paradigm"
+      },
+      "T13": {
+        "name": "fertility",
+        "cue": "New-platform-stack, technological-substrate-as-cornucopia"
+      },
+      "T14": {
+        "name": "initiation",
+        "cue": "First-time-entry of class into system"
+      },
+      "T15": {
+        "name": "memory",
+        "cue": "Classical-cycle-thinking returns, historical-cycle warning"
+      },
+      "T16": {
+        "name": "naming",
+        "cue": "Renaming of valuation metric, terminology shift"
+      },
+      "T17": {
+        "name": "witnessing",
+        "cue": "Documentation of collapse, K-shaped-recovery naming"
+      }
+    }
+  },
+  "narrative_engrams": [
+    {
+      "id": "NE1",
+      "display_name": "AI-revolution-as-civilizational-shift",
+      "linguistic_signature_examples": [
+        "GPT/Claude/Llama mentions co-occurring with 'transformation' / 'singularity' / 'AGI' / 'reshape economy'",
+        "frequent collocations: 'AI is the new electricity', 'fourth industrial revolution', 'productivity inflection'"
+      ],
+      "bridge_density": 5,
+      "narrative_class_primary": "T8",
+      "narrative_class_secondary": [
+        "T13",
+        "T16"
+      ],
+      "current_status": "DOMINANT_ACTIVE",
+      "rigidity": "MEDIUM_HIGH",
+      "first_observed": "2022-Q4",
+      "notes": "Bridge density across equity, venture, labor, geopolitics, education substrates."
+    },
+    {
+      "id": "NE3",
+      "display_name": "RWA-tokenization-bridges-trad-finance-and-crypto",
+      "linguistic_signature_examples": [
+        "tokenized treasuries, tokenized RWA, BUIDL, DTCC-pilot, GENIUS-Act-references, BlackRock-tokenized"
+      ],
+      "bridge_density": 4,
+      "narrative_class_primary": "T2",
+      "narrative_class_secondary": [
+        "T14"
+      ],
+      "current_status": "ACTIVE",
+      "rigidity": "MEDIUM",
+      "first_observed": "2024-H1",
+      "notes": "Mediation pattern between trad-finance regime and crypto regime; first-time-entry of institutional capital into onchain RWA."
+    },
+    {
+      "id": "NE6",
+      "display_name": "Privacy-coin-revival",
+      "linguistic_signature_examples": [
+        "Monero, Zcash mentioned with 'privacy-as-right', 'chain-analytics-overreach', 'regulatory-pushback'"
+      ],
+      "bridge_density": 3,
+      "narrative_class_primary": "T1",
+      "narrative_class_secondary": [
+        "T11"
+      ],
+      "current_status": "FRESHLY_ACTIVE_2026Q2",
+      "rigidity": "MEDIUM",
+      "first_observed": "2025-Q4 (revival; engram dormant 2022-2025)",
+      "notes": "Disturbance pattern against state-surveillance regime; protection-pattern secondary because privacy framing invokes consumer/individual protection."
+    },
+    {
+      "id": "NE7",
+      "display_name": "Mainstream-economics-credibility-collapse",
+      "linguistic_signature_examples": [
+        "Fed got it wrong, EMH dead, inflation-models broken, Phillips-curve dead"
+      ],
+      "bridge_density": 4,
+      "narrative_class_primary": "T3",
+      "narrative_class_secondary": [
+        "T12"
+      ],
+      "current_status": "ACTIVE_DECOHERENCE",
+      "rigidity": "MEDIUM",
+      "first_observed": "2022-Q1 (post-inflation-non-transitory admission)",
+      "notes": "Destruction pattern on classical-macro paradigm; judgement secondary as expert-credibility-stamp under attack."
+    },
+    {
+      "id": "NE13",
+      "display_name": "Stablecoin-as-fundamental-payment-rail",
+      "linguistic_signature_examples": [
+        "CLARITY-Act, GENIUS-Act, Tether-Treasury-buyer, USDC-bank-rails, dollar-export-via-stablecoin"
+      ],
+      "bridge_density": 3,
+      "narrative_class_primary": "T14",
+      "narrative_class_secondary": [
+        "T2",
+        "T11"
+      ],
+      "current_status": "ACTIVE_CRYSTALLIZING",
+      "rigidity": "MEDIUM",
+      "first_observed": "2024-H2 (regulatory framework crystallizing)",
+      "notes": "First-time entry of stablecoin into regulated-payment-system class; mediates trad-finance & crypto; protection-pattern via regulatory legitimization."
+    },
+    {
+      "id": "NE16",
+      "display_name": "Vibecession / wealth-effect-bifurcation",
+      "linguistic_signature_examples": [
+        "K-shaped recovery, vibecession, luxury-flying, asset-rich-cash-poor, productivity-vs-payroll-divergence"
+      ],
+      "bridge_density": 4,
+      "narrative_class_primary": "T17",
+      "narrative_class_secondary": [
+        "T3",
+        "T1"
+      ],
+      "current_status": "ACTIVE",
+      "rigidity": "MEDIUM_HIGH",
+      "first_observed": "2022-Q3",
+      "notes": "Witnessing pattern coining/documenting bifurcation; secondary destruction (of productivity-pay-link narrative) and disturbance (against asset-everyone-benefits framing)."
+    },
+    {
+      "id": "NE20",
+      "display_name": "AI-CapEx-bubble-or-foundation",
+      "linguistic_signature_examples": [
+        "NVDA-revenue-justifies, hyperscaler-capex-doubling, dotcom-redux, picks-and-shovels, ROIC-on-AI-spend"
+      ],
+      "bridge_density": 4,
+      "narrative_class_primary": "T7",
+      "narrative_class_secondary": [
+        "T12",
+        "T9"
+      ],
+      "current_status": "ACTIVE_LOAD_BEARING",
+      "rigidity": "MEDIUM",
+      "first_observed": "2024-H2",
+      "notes": "Trial pattern \u2014 bellwether test of whether AI capex investment is foundation or bubble. Counter-narrative to NE1's pure-civilizational-shift framing."
+    },
+    {
+      "id": "NE21",
+      "display_name": "Warsh-Fed-regime-shift",
+      "linguistic_signature_examples": [
+        "Sound Money, Fed/Treasury accord, regime change, balance-sheet runoff, Warsh-doctrine"
+      ],
+      "bridge_density": 4,
+      "narrative_class_primary": "T11",
+      "narrative_class_secondary": [
+        "T15",
+        "T6"
+      ],
+      "current_status": "FRESHLY_CRYSTALLIZED_2026Q2",
+      "rigidity": "MEDIUM_HIGH",
+      "first_observed": "2026-05-13 Senate confirmation (54-45)",
+      "notes": "Protection pattern with counter-chirality vs prior Fed-pivot pattern; couples to NE7 + NE9."
+    },
+    {
+      "id": "NE22",
+      "display_name": "Crypto-institutionalization-via-ETF-balance-sheet",
+      "linguistic_signature_examples": [
+        "spot-BTC-ETF flows, MicroStrategy/Strategy balance-sheet, institutional bid cracked, BTC F&G index extreme fear"
+      ],
+      "bridge_density": 3,
+      "narrative_class_primary": "T8",
+      "narrative_class_secondary": [
+        "T11"
+      ],
+      "current_status": "STRESSED_2026Q2",
+      "rigidity": "MEDIUM",
+      "first_observed": "2024-Q1 ETF launch, stressed 2026-06-01 BTC -14% week",
+      "notes": "Guidance pattern (mainstream-adoption framing) under stress post-June-1 BTC crack; pair with NE6 privacy-coin counter-rotation."
+    }
+  ],
+  "cascade_pressure_pairs": [
+    {
+      "pair_id": "DP-CP1-prime",
+      "engrams": [
+        "NE20",
+        "NE1"
+      ],
+      "cascade_pressure_label": "VERY HIGH",
+      "cascade_pressure_score_approx": 0.92,
+      "delta_theta_degrees": 73,
+      "substrate_overlap": "HIGH",
+      "predicted_cascade_form": "Bifurcation of the AI trade into infrastructure-as-utility (chips, power, real estate) vs application-layer-as-overcapitalized (frothy software wrappers, 100x-ARR agentic startups). Slow grains win.",
+      "trigger_signal_to_watch": "(a) named circular-financing framing in WSJ/FT/Bloomberg/Economist/NYT; (b) single-name AI-software drawdown \u226515% on monetization concerns; (c) SOXX outperforming IGV by \u2265500bps on rolling 20d.",
+      "horizon": "30d (lock 2026-06-09 \u2192 resolve 2026-07-09)",
+      "predicted_resolution_hint": "Bifurcation; carryover from #001 CP1 with widened \u0394\u03b8."
+    },
+    {
+      "pair_id": "DP-CP3-prime",
+      "engrams": [
+        "NE7",
+        "NE9",
+        "NE21"
+      ],
+      "cascade_pressure_label": "HIGH",
+      "cascade_pressure_score_approx": 0.81,
+      "delta_theta_degrees": 64,
+      "substrate_overlap": "HIGH",
+      "predicted_cascade_form": "Emergency-reactivation of T11-protection-institutional OR counter-cascade against the Fed-pivot pattern, conditional on June 16-17 FOMC SEP/dot-plot outcome.",
+      "trigger_signal_to_watch": "(a) June 16-17 FOMC dot-plot median 2026 cuts \u22641 + statement removes easing bias; (b) named Fed-independence framing in WSJ/FT/Bloomberg/NYT/Economist editorial; (c) 10y move >25bps with explicit Warsh attribution.",
+      "horizon": "30d",
+      "predicted_resolution_hint": "Regime-defining; new Warsh-NE21 engram intersects prior pair."
+    },
+    {
+      "pair_id": "DP-CP6",
+      "engrams": [
+        "NE20",
+        "NE10-prime"
+      ],
+      "cascade_pressure_label": "VERY HIGH",
+      "cascade_pressure_score_approx": 0.95,
+      "delta_theta_degrees": 78,
+      "substrate_overlap": "MEDIUM-HIGH",
+      "predicted_cascade_form": "Throughput-binding destruction of the AI-application-layer pattern by the AI-power-layer pattern. Slow-cycling grid build-out (4-year cycles) wins boundary contests against fast-cycling chip cycles (18-month).",
+      "trigger_signal_to_watch": "(a) named hyperscaler attributes AI buildout delay to grid/interconnection/permitting; (b) NEE/CEG/VST/TLN/GEV new 52-week high OR \u22652 sell-side upgrades citing AI-power; (c) named BYOP / behind-the-meter / co-located-generation framing in \u22653 mainstream business-press articles.",
+      "horizon": "30d",
+      "predicted_resolution_hint": "Throughput-binding; broadens #001 CP5 scope as energy-throughput pattern crystallizes to public-discourse level."
+    },
+    {
+      "pair_id": "DP-CP7",
+      "engrams": [
+        "NE22",
+        "NE6"
+      ],
+      "cascade_pressure_label": "HIGH",
+      "cascade_pressure_score_approx": 0.86,
+      "delta_theta_degrees": 68,
+      "substrate_overlap": "MEDIUM-HIGH",
+      "predicted_cascade_form": "Counter-cascade. When institutionalization pattern cracks (June 1-2 BTC -14% week + record ETF outflows + Strategy spot sale), capital rotates within crypto toward orthogonal privacy-coin pattern (XMR +8% same window, no named catalyst).",
+      "trigger_signal_to_watch": "(a) named US/EU regulator statement, guidance, or designation referencing privacy coins; (b) major US/EU exchange delisting/restriction/geofencing of a privacy coin; (c) privacy sector index (XMR+ZEC+DASH equal-weight) outperforms BTC \u22652000bps on rolling 20d with sustained outperformance in \u22655 of last 10 sessions.",
+      "horizon": "30d",
+      "predicted_resolution_hint": "Counter-cascade; replaces #001 CP2 with dual-pathway lock (regulatory + market-routing) after CP2 mechanism-miss."
+    }
+  ],
+  "narrative_class_distribution": {
+    "description": "Distribution of narrative-class assignments across 9 published engrams (June 2026). Full inventory tracked internally.",
+    "primary_class_counts": {
+      "T8": 2,
+      "T2": 1,
+      "T1": 1,
+      "T3": 1,
+      "T14": 1,
+      "T17": 1,
+      "T7": 1,
+      "T11": 1
+    },
+    "diversity_assessment": "Sample shows 8 distinct primary classes across 9 engrams. T11 protection-pattern now most-represented (NE13, NE21) as institutional/regulatory framings intensify."
+  },
+  "track_record": {
+    "description": "Forward-only honesty mechanism. Each refresh publishes prior-refresh predictions plus outcomes per pre-registered criteria. No re-classification, no narrative-fitting.",
+    "running_score": "3 PASS / 1 FAIL = 75% (Issue #001 resolutions). Aggregate 30d lock PASS.",
+    "predictions_made": [],
+    "predictions_resolved": [
+      {
+        "pair_id": "DP-CP1",
+        "prediction_text": "\u22651 of: AI earnings miss, named AI-bubble framing in mainstream press, or sector rotation OUT of AI-pure-plays INTO infrastructure",
+        "lock_date": "2026-05-10",
+        "resolution_date": "2026-06-09",
+        "outcome_observed_date": "2026-05-26..2026-06-09",
+        "outcome_evidence": "NVDA Q1 FY27 BEAT (no earnings-miss); but named AI-bubble framing reached Fortune 2026-06-08, Bloomberg 2026-06-07, Axios 2026-06-06, American Prospect 2026-06-09 + sector rotation XLU +$694M / XLK -$476M Q1 flows + Vistra/NextEra re-rated. Criteria (b)+(c) triggered.",
+        "verdict": "PASS",
+        "score_contribution": "+1"
+      },
+      {
+        "pair_id": "DP-CP2",
+        "prediction_text": "\u22651 of: named regulatory action against a privacy-coin, major exchange delisting, or ZEC mean-reversion \u226530% from April peak",
+        "lock_date": "2026-05-10",
+        "resolution_date": "2026-06-09",
+        "outcome_observed_date": "no event matching criteria within window",
+        "outcome_evidence": "No new privacy-coin regulatory action. No new major delisting. ZEC rallied to fresh 2026 high above $688 in May, then crashed -50% on 2026-06-05 from endogenous Orchard zero-knowledge-proof soundness bug \u2014 NOT regulation. Wrong mechanism.",
+        "verdict": "FAIL",
+        "score_contribution": "-1"
+      },
+      {
+        "pair_id": "DP-CP3",
+        "prediction_text": "\u22651 of: explicit Fed pivot signal repriced, named monetary regime-shift framing in central-bank communications, or sustained 10y move >25bps with named attribution",
+        "lock_date": "2026-05-10",
+        "resolution_date": "2026-06-09",
+        "outcome_observed_date": "2026-05-13 .. 2026-06-09",
+        "outcome_evidence": "Kevin Warsh confirmed Fed Chair 2026-05-13 (54-45, most-divisive on record), sworn in 2026-05-22. Sound-Money and regime-change framing dominated CNBC, LPL Research, NPR, Jefferson City News-Tribune. Goldman shifted to no-cuts-2026; market priced 65% hold for June. 10y moved only ~7bps (sub-threshold). Criterion (b) PASS clean, (a) partial, (c) no.",
+        "verdict": "PASS",
+        "score_contribution": "+1"
+      },
+      {
+        "pair_id": "DP-CP5",
+        "prediction_text": "\u22651 of: grid as named AI-cascade-driver, AI-build delay attributed to grid/permitting, or sector rotation INTO power/utility plays",
+        "lock_date": "2026-05-10",
+        "resolution_date": "2026-06-09",
+        "outcome_observed_date": "rolling May-June",
+        "outcome_evidence": "All three criteria triggered. Sightline/Bloomberg crystallized transformers-switchgear-batteries-grid as named bottleneck set. Tom's Hardware: ~half of planned US data-center builds delayed/cancelled, permitting cited in 29% of milestone-change requests. XLU/XLK flows + Vistra/NextEra rerating confirmed capital reallocation into power/utility.",
+        "verdict": "PASS",
+        "score_contribution": "+1"
+      }
+    ],
+    "first_prediction_lock_date": "2026-05-10",
+    "first_resolution_date_approx": "2026-06-09 (resolved Issue #002)",
+    "scoring_protocol": {
+      "TRIGGERED_AS_PREDICTED": "+1",
+      "NOT_TRIGGERED_WITHIN_WINDOW": "0",
+      "TRIGGERED_DIFFERENT_FORM": "+0.5 (partial credit if direction correct, form differs)",
+      "AMBIGUOUS": "0",
+      "FAILED": "-1 (form contradicts prediction)"
+    }
+  },
+  "methodology_summary_short": "Each narrative-engram is assigned 1-2 narrative-class labels (T1..T17) by mapping its linguistic-signature features to operational cues. Each engram-pair receives a \u0394\u03b8 score (0-90\u00b0, narrative-incompatibility) decomposed into 4 dimensions (causal-direction, mechanism-overlap, temporal-horizon, substrate). Cascade-pressure score = sin\u00b2(\u0394\u03b8) \u00d7 substrate-overlap \u00d7 engram-rigidity, range [0,1]. Pre-state cascade-pressure rankings predict cascade likelihood + form. See methodology.md for full rubric.",
+  "limitations_disclosed": [
+    "Single-coder rubric application \u2014 independent-rater agreement study pending",
+    "\u0394\u03b8 values rubric-quantized (multiples of 7.5\u00b0), not continuously measured",
+    "Predictive scope = INTERNALLY-DRIVEN cascades only; exogenous-trigger cascades (pandemics, wars, natural disasters) are out-of-scope",
+    "Retrospective explanatory-adequacy on N=10 historical events does NOT replace forward predictive validation",
+    "No statistical-power calibration on aggregate predictions \u2014 cycle-by-cycle binomial test recommended"
+  ],
+  "next_refresh_changelog_template": {
+    "engrams_added": [],
+    "engrams_removed_or_dormant": [],
+    "engrams_status_changed": [],
+    "cascade_pairs_added": [],
+    "track_record_updated": []
+  },
+  "links": {
+    "letter_url": "https://cteconatlas.substack.com/p/cascade-pressure-atlas-issue-002",
+    "letter_name": "Cascade-Pressure Atlas Letter \u2014 Issue #002 (free, monthly)",
+    "tip_jar_btc": "38aMqSmwPeQXBh8atyT3hJnSp9sPerPgZd",
+    "tip_jar_lightning": null,
+    "tip_jar_note": "Voluntary tips support free monthly publication. No reciprocal benefit. No fiduciary relationship. BTC on-chain (P2SH-SegWit, send from any standard wallet).",
+    "letter_publication_root": "https://cteconatlas.substack.com/"
+  }
+}
